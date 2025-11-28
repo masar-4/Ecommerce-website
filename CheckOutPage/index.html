@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deckedout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="logo">
+            <a href="">
+              <img src="./assets/images/deckedout-logo.webp" alt="" />
+            </a>
+          </div>
+          <a href="#" class="cartIcon">🛒</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="mainContainer">
+      <div class="row">
+        <!-- Checkout Form -->
+        <div class="col-12 order-2 order-md-1 col-md-7">
+          <div class="checkoutForm">
+            <!-- Contact Section -->
+            <div class="mb-4">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h2 class="sectionTitle mb-0">Contact</h2>
+              </div>
+              <input type="email" class="form-control formControll" placeholder="Email" />
+              <div class="form-check mt-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="emailOffers"
+                />
+                <label class="form-check-label" for="emailOffers">
+                  Email me with news and offers
+                </label>
+              </div>
+            </div>
+
+            <!-- Delivery Section -->
+            <div class="mb-4">
+              <h2 class="sectionTitle">Delivery</h2>
+              <div class="mb-3">
+                <label class="form-label formLabell">Country/Region</label>
+                <select class="form-select formSelectt">
+                  <option>Egypt</option>
+                </select>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control formControll"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control formControll"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control formControll" placeholder="Address" />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control formControll"
+                  placeholder="Apartment, suite, etc."
+                />
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <input type="text" class="form-control formControll" placeholder="City" />
+                </div>
+                <div class="col-md-8">
+                  <select class="form-select formSelectt">
+                    <option>Cairo</option>
+                    <option>Alexandria</option>
+                    <option>Port Said</option>
+                    <option>Suez</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control formControll" placeholder="Phone" />
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="saveInfo" />
+                <label class="form-check-label" for="saveInfo">
+                  Save this information for next time
+                </label>
+              </div>
+            </div>
+
+            <!-- Shipping Method -->
+            <div class="mb-4">
+              <h2 class="sectionTitle">Shipping method</h2>
+              <div class="shipping-method active">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <input type="radio" name="shipping" checked class="me-2" />
+                    <span>Deliver To My Door Step</span>
+                  </div>
+                  <span class="fw-bold">E£110.00</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="mb-4">
+              <h2 class="sectionTitle">Payment</h2>
+              <div class="paymentOption active">
+                <div class="d-flex align-items-center">
+                  <input type="radio" name="payment" checked class="me-2" />
+                  <span>Cash on Delivery (COD)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pay Button -->
+            <button class="payBtn">Pay now</button>
+
+            <!-- Footer -->
+            <div class="footerText">All rights reserved Decked Out</div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="OrderSummary col-12 order-1 order-md-2 col-md-5">
+          <div class="orderSummary">
+            <!-- Product Item -->
+            <div class="productItem">
+              <div class="productImage">
+                <div class="productBadge">1</div>
+                <img
+                  src="./assets/images/cart-product.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="productInfo">
+                <div class="productName">Big Air in Navy</div>
+                <div class="productSize">37 EU</div>
+              </div>
+              <div class="productPrice">LE 1,300.00</div>
+            </div>
+
+            <!-- Discount Code -->
+            <div class="discountInput mb-4">
+              <input
+                type="text"
+                class="form-control formControll"
+                placeholder="Discount code"
+              />
+              <button class="applyBtn">Apply</button>
+            </div>
+
+            <!-- Summary -->
+            <div class="summaryRow">
+              <span>Subtotal</span>
+              <span>LE 1,300.00</span>
+            </div>
+            <div class="summaryRow">
+              <span>Shipping</span>
+              <span>LE 110.00</span>
+            </div>
+
+            <!-- Total -->
+            <div class="totalRow">
+              <span>Total</span>
+              <div>
+                <span class="oldpPrice">LE 2000</span>
+                <span>LE 1,410.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
