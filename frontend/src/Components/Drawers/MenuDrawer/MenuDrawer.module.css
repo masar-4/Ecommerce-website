@@ -1,0 +1,41 @@
+.allNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fdf9f9;
+  color: var(--black-color);
+  min-height: 100vh;
+  min-width: 69%;
+  z-index: 4;
+  /* transform: translateX(-100%); */
+  /* translateX(0);  */
+  /* to show the cart-drawer */
+  transition: var(--all-transition);
+  /* display: none; */
+  display: block;
+  /* to show the cart-drawer */
+  z-index: 10001;
+  /* overflow-y: scroll; */
+  transition: var(--all-transition);
+}
+/* .allNav .allNavLi {
+  border-bottom: 1px solid var(--black-color);
+  padding-bottom: 10px;
+} */
+.allNav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+.allNav i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.hideDrawer {
+  transform: translateX(-100%);
+}
+.allNav i {
+  position: absolute;
+}
