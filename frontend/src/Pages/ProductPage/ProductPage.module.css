@@ -1,0 +1,98 @@
+/* productPage */
+.article {
+  border-bottom: #838383 1px solid;
+  padding: 1rem 0;
+}
+.productPage span {
+  color: #838383;
+}
+.productPage p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.deckedout {
+  font-size: 12px;
+}
+.tax {
+  font-size: 10px;
+}
+.productTitle h6 {
+  font-weight: 500;
+  font-size: 32px;
+}
+.article ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.article p {
+  color: #312f2f;
+  font-size: 13px;
+  font-weight: 500;
+}
+.article h6 {
+  font-weight: 700;
+}
+.counter i:hover {
+  cursor: pointer;
+}
+.counter {
+  border: 1px solid #000;
+}
+.buyNow button {
+  border: none;
+  background-color: #000;
+  color: var(--white-color);
+  padding: 1rem 1rem;
+  transition: var(--all-transition);
+}
+.buyNow button:hover {
+  background-color: var(--black-color);
+}
+.addtocartBtn button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  padding: 1rem 1rem;
+  transition: var(--all-transition);
+  border: 1px solid #000;
+  overflow: hidden;
+  font-weight: 600;
+}
+.addtocartBtn button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translateY(60px);
+  transition: var(--all-transition);
+  z-index: -1;
+}
+.addtocartBtn button:hover {
+  color: var(--white-color);
+}
+.addtocartBtn button:hover::after {
+  transform: translateY(0);
+}
+.SizeSelection {
+  /* border-bottom: 1px solid #000; */
+  padding: 1rem 0;
+}
+.SizeSelection .active {
+  border: 1px solid #000;
+}
+.SizeSelection button {
+  background-color: transparent;
+  padding: 0.3rem 1rem;
+  font-size: 14px;
+  border: none;
+  transition: var(--all-transition);
+}
+.SizeSelection button:hover {
+  cursor: pointer;
+}

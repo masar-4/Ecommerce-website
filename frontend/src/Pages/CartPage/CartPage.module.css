@@ -1,0 +1,101 @@
+/* empty-cart */
+.cartEmpty button {
+  position: relative;
+  background-color: var(--black-color);
+  border: none;
+  padding: 20px 150px;
+  transition: var(--all-transition);
+  min-width: 300px;
+}
+.cartEmpty a button {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white-color);
+  position: relative;
+  z-index: 3;
+  transition: var(--all-transition);
+}
+/* CartPage Products */
+.tableHead p {
+  font-size: 14px;
+  color: #111111cd;
+  font-weight: 800;
+}
+.cartProductImg img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.cartPage .productNameSize a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+.cartPage i:hover {
+  cursor: pointer;
+}
+.checkoutSection span {
+  font-size: 12px;
+  color: gray;
+}
+.checkoutSection button {
+  position: relative;
+  background-color: var(--black-color);
+  border: none;
+  padding: 20px 150px;
+  min-width: 300px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: var(--all-transition);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.checkoutSection a {
+  text-decoration: none;
+}
+/* Span + icon styles inside the button */
+.checkoutSection button span,
+.checkoutSection button i {
+  font-size: 16px;
+  color: var(--white-color);
+  transition: var(--all-transition);
+}
+.checkoutSection button i {
+  font-size: 8px;
+}
+.checkoutSection button:hover {
+  background-color: #111111cd;
+}
+
+.checkoutSection .continueShopping {
+  color: var(--black-color);
+  font-size: 14px;
+  transition: var(--all-transition);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black-color);
+}
+.checkoutSection .continueShopping:hover {
+  color: #111111cd;
+}
+.trashIcon {
+  color: rgb(228 37 37);
+}
+
+@media (max-width: 768px) {
+  .checkoutSection button {
+    padding: 20px 100px;
+  }
+  .checkoutSection {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .productCounter {
+    transform: translateX(-24px);
+  }
+}

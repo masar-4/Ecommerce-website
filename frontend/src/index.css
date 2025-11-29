@@ -1,0 +1,36 @@
+:root {
+  --white-color: #fdf9f9;
+  --black-color: #000;
+  --all-transition: all 0.3s ease-in-out;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+.newPrice {
+  color: red;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.hideDrawer {
+  transform: translateX(100%);
+}
+.showDrawer {
+  transform: translateX(0);
+}

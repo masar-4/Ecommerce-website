@@ -1,0 +1,13 @@
+/* policy */
+.returnHeader {
+  font-weight: 900;
+}
+.policy ul {
+  display: flow-root;
+}
+.policy li p {
+  font-weight: 500;
+  max-width: 820px;
+}
+
+

@@ -1,0 +1,14 @@
+/* delivery */
+.deliveryHeader {
+  font-weight: 900;
+}
+.Delivery .deliveryHeader {
+  display: flow-root;
+}
+.Delivery p {
+  font-weight: 500;
+  max-width: 620px;
+}
+.container {
+  min-height: 62vh;
+}
