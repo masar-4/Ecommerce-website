@@ -1,0 +1,35 @@
+.shopNow a {
+  text-decoration: none;
+}
+
+.shopNow button {
+  position: relative;
+  background: transparent;
+  border: 1px solid white;
+  padding: 15px 30px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: var(--all-transition);
+}
+
+.shopNow button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transform: translateY(100%);
+  transition: var(--all-transition);
+}
+
+.shopNow button:hover::after {
+  transform: translateY(0);
+}
+
+.shopNow button:hover {
+  color: var(--black-color);
+}
