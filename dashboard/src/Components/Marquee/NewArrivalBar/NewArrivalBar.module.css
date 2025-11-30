@@ -1,0 +1,30 @@
+.NewArrivalBar {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.NewArrivalText {
+  font-size: 100px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 2rem;
+}
+.NewArrivalText img {
+  height: 100px;
+  margin: 0 1rem;
+  vertical-align: middle;
+}
+.NewArrivalText {
+  /* display: inline-block; */
+  animation: scroll-left 30s linear infinite;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

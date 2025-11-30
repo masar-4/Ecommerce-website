@@ -1,0 +1,105 @@
+.header {
+  min-height: 100vh;
+  background: url("../src/assets/decked-out-hero.webp") center/cover no-repeat;
+}
+/* hero-section */
+.heroSection {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heroSection h4 {
+  font-style: italic;
+}
+
+.collectionsSection {
+  padding: 3rem 0;
+}
+.collectionsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.collectionsSubtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.categoryTabs span {
+  font-weight: 600;
+
+  font-size: 1rem;
+  cursor: pointer;
+}
+.categoryTabs .active {
+  border-bottom: 2px solid var(--black-color);
+  color: var(--black-color);
+}
+.categoryTabs .inactive {
+  color: #999;
+}
+
+.shopLink {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--black-color);
+  padding-bottom: 2px;
+  transition: var(--all-transition);
+}
+
+.shopLink:hover {
+  color: #999;
+}
+
+.dropCard {
+  background-color: #111;
+  border: none;
+  position: relative;
+  max-height: 900px;
+}
+
+.dropImg {
+  height: 900px;
+  object-fit: cover;
+  position: relative;
+  transform: translateY(-5%);
+}
+
+.letterSpacing {
+  letter-spacing: 4px;
+}
+
+.content {
+  transform: translateY(-160%);
+}
+/* Small  768px  to 991px*/
+@media (max-width: 768px) {
+  .heroSection {
+    top: 8%;
+  }
+  .content {
+    transform: translateY(-30%);
+  }
+}
+@media (height: 600px) {
+  .content {
+    transform: translateY(-30%);
+  }
+}
+
+@media (height: 800px) {
+  .content {
+    transform: translateY(-70%);
+  }
+}
+@media (min-height: 1000px) {
+  .content {
+    transform: translateY(-20%);
+  }
+}
