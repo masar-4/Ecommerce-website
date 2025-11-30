@@ -21,19 +21,6 @@
 
 ⚡ Built using Vite for faster development
 
-# Backend
-
-⚙️ Node.js + Express API
-
-🛍️ Product routes
-
-📦 Handles filtering by category
-
-🔐 CORS enabled
-
-🌐 Returns JSON product data
-
-📁 Structured controllers, routes, and models
 
 # 🛠️ Tech Stack
 # Frontend
@@ -52,18 +39,7 @@ FontAwesome
 
 Bootstrap (optional)
 
-# Backend
-
-Node.js
-
-Express
-
-MongoDB / JSON File (depending on your setup)
-
-dotenv
-
-cors
-
+tailwind (optional)
 
 
 
